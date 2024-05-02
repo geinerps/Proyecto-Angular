@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="form-group">
+        <h2>Discover</h2>
+    </div>
+
+    <div class="row" style="margin-top: 20px;">
+        <div *ngFor="let show of tvshows" class="card" style="width: 18rem;margin-left: 10px;margin-top: 20px;">
+            <img src='https://image.tmdb.org/t/p/original{{ show.poster_path }}' class="card-img-top"
+                alt="Movie Poster">
+                {{show.id}}
+            <div class="card-body">
+                <h5 class="card-title">{{show.title}}</h5>
+                <p class="card-text"><strong>Overview:</strong> {{show.overview}}</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,71 @@
+/* Estilos del modal */
+.modal-content {
+    background-color: #000;
+    color: #fff; /* Cambiamos el color del texto a blanco */
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.5); /* Cambiamos el color de la sombra */
+    padding: 20px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.modal-title {
+    font-size: 1.2rem;
+    color: #fff; /* Cambiamos el color del título a blanco */
+}
+
+.modal-body {
+    color: #ccc; /* Cambiamos el color del texto del cuerpo a gris claro */
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-secondary {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos glowing */
+.glowing-modal {
+    animation: glowing 1.5s infinite alternate;
+}
+
+@keyframes glowing {
+    from {
+        box-shadow: 0 0 10px #03e9f4, 0 0 20px #03e9f4, 0 0 30px #03e9f4;
+    }
+    to {
+        box-shadow: 0 0 20px #03e9f4, 0 0 30px #03e9f4, 0 0 40px #03e9f4;
+    }
+}
+
+/* Estilos del botón de cerrar */
+.btn-close {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    color: #999;
+    font-size: 20px;
+}
+
+.btn-close:hover {
+    color: #555;
+}
