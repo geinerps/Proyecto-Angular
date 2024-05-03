@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let character of allCharacters | async">
+        <div class="card mb-3">
+          <div class="card-body">
+            <h2 class="card-title">{{character.name}}</h2>
+            <a href="{{character.urls[0].url}}" target="_blank" class="btn btn-primary">Details</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
