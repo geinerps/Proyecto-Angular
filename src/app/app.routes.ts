@@ -4,11 +4,11 @@ import { MoviesComponent } from './movies/movies.component';
 import { TvshowsComponent } from './tvshows/tvshows.component';
 import { MoviesDetailComponent } from './movies-detail/movies-detail.component';
 import { RegisterComponent } from './register/register.component';
-import { PersonajesComponent } from './personajes/personajes.component';
+import { CharactersComponent } from './personajes/personajes.component';
 
 export const routes: Routes = [
   { path: 'login', component: LoginComponent },
-  { path: 'personajes', component: PersonajesComponent },  
+  { path: 'personajes', component: CharactersComponent },  
   { path: 'movies', component: MoviesComponent },  
   { path: 'movies/:id', component: MoviesDetailComponent },
   { path: 'tvshows', component: TvshowsComponent },  

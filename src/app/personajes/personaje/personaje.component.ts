@@ -1,12 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-personaje',
-  standalone: true,
-  imports: [],
+  selector: 'app-character',
   templateUrl: './personaje.component.html',
-  styleUrl: './personaje.component.css'
+  styleUrls: ['./personaje.component.css']
 })
-export class PersonajeComponent {
+export class CharacterComponent implements OnInit {
+  @Input() character: any;
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }

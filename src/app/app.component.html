@@ -15,6 +15,9 @@
           </a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/login'">Personajes</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" [routerLink]="'/movies'">Movies</a>
         </li>
         <li class="nav-item">
@@ -23,6 +26,7 @@
         <li class="nav-item">
           <a class="nav-link" [routerLink]="'/login'">Login</a>
         </li>
+      
         
       </ul>
       <form class="d-flex">
@@ -43,6 +47,5 @@
   <span (click)="logout()">Logout</span>
 </div>
 }
-
 
 <router-outlet></router-outlet>
